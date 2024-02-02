@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Charlie';
+	src: url(fonts/Roboto-Bold.woff) format('woff'), 
+		url(fonts/Roboto-Bold.ttf) format('truetype');
+    }
+	
+ul, a {
+	font-family: 'Charlie';
+	}	

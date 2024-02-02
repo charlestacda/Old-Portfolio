@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+		<!-- Metadata -->
+		<title>Portfolio</title>
+		<link rel="shortcut icon" href="Logo/tabicon.png">
+		<meta name="author" content="Charles Joshua Tacda">
+		<meta name="description" content="Show Video, Song, and Website Portfolio of Charlie here."> 
+		<meta name="keywords" content="VideoSong Website Portfolio Charlie">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Load Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="font.css">
+		
+		<!-- Script -->
+		<script>
+		function validateForm() {
+			var email = document.forms["form1"]["emailAddress"].value;
+			var pass = document.forms["form1"]["password"].value;
+			
+			if (email == ""){
+
+				alert("Please enter your email address to log in.");
+				return false;
+			}
+			
+			if (pass == ""){
+
+				alert("Please enter your password to log in.");
+				return false;
+			}
+			
+			if (email != "" || pass != ""){
+				if (email != "charlestacda@gmail.com"){
+				
+				alert("The email address you entered is not assigned to a registered user.");
+				return false;
+				}
+				
+				if (pass != "cj@1125"){
+				
+				alert("The password you entered is incorrect. Please try again.");
+				return false;
+				}
+			
+			}
+		
+			}
+		function SignUpValidate() {
+			var email = document.forms["form2"]["emailAddress"].value;
+			var pass = document.forms["form2"]["password"].value;
+			var conf = document.forms["form2"]["confirmPassword"].value;
+			
+			if (email == ""){
+
+				alert("Please enter your email address to sign up.");
+				return false;
+			}
+			
+			if (pass == ""){
+
+				alert("Please enter your password to sign up.");
+				return false;
+			}
+			
+			if (conf == ""){
+
+				alert("Please re-type your password to confirm.");
+				return false;
+			}
+			else if (conf != pass) {
+			
+				alert("Your password does not match. Try again.");
+				return false;
+			}
+			
+			 if (!this.form2.checkBox.checked){
+			 
+				alert('You must agree to the Terms of Use & Privacy Policy first.');
+				return false;
+			}
+			
+			if (confirm("Are you sure you want to create an account for " + email)) {
+				return true;
+			  } else {
+				return false;
+			  }
+		
+		}
+		
+		$(document).ready(function(){
+			var url = $("#myVideo").attr('src');
+			
+			$("#myModal").on('hide.bs.modal', function(){
+				$("#myVideo").attr('src', '');
+			});
+
+			$("#myModal").on('show.bs.modal', function(){
+				$("#myVideo").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo1").attr('src');
+			
+			$("#myModal1").on('hide.bs.modal', function(){
+				$("#myVideo1").attr('src', '');
+			});
+
+			$("#myModal1").on('show.bs.modal', function(){
+				$("#myVideo1").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo2").attr('src');
+			
+			$("#myModal2").on('hide.bs.modal', function(){
+				$("#myVideo2").attr('src', '');
+			});
+
+			$("#myModal2").on('show.bs.modal', function(){
+				$("#myVideo2").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo3").attr('src');
+			
+			$("#myModal3").on('hide.bs.modal', function(){
+				$("#myVideo3").attr('src', '');
+			});
+
+			$("#myModal3").on('show.bs.modal', function(){
+				$("#myVideo3").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo4").attr('src');
+			
+			$("#myModal4").on('hide.bs.modal', function(){
+				$("#myVideo4").attr('src', '');
+			});
+
+			$("#myModal4").on('show.bs.modal', function(){
+				$("#myVideo4").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo5").attr('src');
+			
+			$("#myModal5").on('hide.bs.modal', function(){
+				$("#myVideo5").attr('src', '');
+			});
+
+			$("#myModal5").on('show.bs.modal', function(){
+				$("#myVideo5").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo6").attr('src');
+			
+			$("#myModal6").on('hide.bs.modal', function(){
+				$("#myVideo6").attr('src', '');
+			});
+
+			$("#myModal6").on('show.bs.modal', function(){
+				$("#myVideo6").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo7").attr('src');
+			
+			$("#myModal7").on('hide.bs.modal', function(){
+				$("#myVideo7").attr('src', '');
+			});
+
+			$("#myModal7").on('show.bs.modal', function(){
+				$("#myVideo7").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo8").attr('src');
+			
+			$("#myModal8").on('hide.bs.modal', function(){
+				$("#myVideo8").attr('src', '');
+			});
+
+			$("#myModal8").on('show.bs.modal', function(){
+				$("#myVideo8").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo9").attr('src');
+			
+			$("#myModal9").on('hide.bs.modal', function(){
+				$("#myVideo9").attr('src', '');
+			});
+
+			$("#myModal9").on('show.bs.modal', function(){
+				$("#myVideo9").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo10").attr('src');
+			
+			$("#myModal10").on('hide.bs.modal', function(){
+				$("#myVideo10").attr('src', '');
+			});
+
+			$("#myModal10").on('show.bs.modal', function(){
+				$("#myVideo10").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo11").attr('src');
+			
+			$("#myModal11").on('hide.bs.modal', function(){
+				$("#myVideo11").attr('src', '');
+			});
+
+			$("#myModal11").on('show.bs.modal', function(){
+				$("#myVideo11").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo12").attr('src');
+			
+			$("#myModal12").on('hide.bs.modal', function(){
+				$("#myVideo12").attr('src', '');
+			});
+
+			$("#myModal12").on('show.bs.modal', function(){
+				$("#myVideo12").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo13").attr('src');
+			
+			$("#myModal13").on('hide.bs.modal', function(){
+				$("#myVideo13").attr('src', '');
+			});
+
+			$("#myModal13").on('show.bs.modal', function(){
+				$("#myVideo13").attr('src', url);
+			});
+		});
+		$(document).ready(function(){
+			var url = $("#myVideo14").attr('src');
+			
+			$("#myModal14").on('hide.bs.modal', function(){
+				$("#myVideo14").attr('src', '');
+			});
+
+			$("#myModal14").on('show.bs.modal', function(){
+				$("#myVideo14").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo15").attr('src');
+			
+			$("#myModal15").on('hide.bs.modal', function(){
+				$("#myVideo15").attr('src', '');
+			});
+
+			$("#myModal15").on('show.bs.modal', function(){
+				$("#myVideo15").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo16").attr('src');
+			
+			$("#myModal16").on('hide.bs.modal', function(){
+				$("#myVideo16").attr('src', '');
+			});
+
+			$("#myModal16").on('show.bs.modal', function(){
+				$("#myVideo16").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo17").attr('src');
+			
+			$("#myModal17").on('hide.bs.modal', function(){
+				$("#myVideo17").attr('src', '');
+			});
+
+			$("#myModal17").on('show.bs.modal', function(){
+				$("#myVideo17").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo18").attr('src');
+			
+			$("#myModal18").on('hide.bs.modal', function(){
+				$("#myVideo18").attr('src', '');
+			});
+
+			$("#myModal18").on('show.bs.modal', function(){
+				$("#myVideo18").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo19").attr('src');
+			
+			$("#myModal19").on('hide.bs.modal', function(){
+				$("#myVideo19").attr('src', '');
+			});
+
+			$("#myModal19").on('show.bs.modal', function(){
+				$("#myVideo19").attr('src', url);
+			});
+		});
+		
+		$(document).ready(function(){
+			var url = $("#myVideo20").attr('src');
+			
+			$("#myModal20").on('hide.bs.modal', function(){
+				$("#myVideo20").attr('src', '');
+			});
+
+			$("#myModal20").on('show.bs.modal', function(){
+				$("#myVideo20").attr('src', url);
+			});
+		});
+		
+		</script>
+		
+		<!-- Style -->
+		<style>
+		body{
+			color: white;
+			background: url("Images/Pattern.jpg");
+			background-size: 1000px 1000px;
+			}
+		
+		.green {
+			background-color: #3EC572;
+			border-color: #3EC572;
+			}
+		
+		.light-green {
+			background-color: #7BE2A5;
+			}
+		
+		.dropdown-menu {
+			margin-left: 30px;
+			margin-right: 30px;
+			}
+		
+		.button{
+			background-color: #7BE2A5;
+			border: none;
+			color: white;
+			}
+			
+		.button:hover{
+			color: #33a860;
+			}
+			
+		.container1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding-bottom: 50px;
+			}
+			
+		.carousel {
+			border-radius: 55px 55px 55px 55px;
+			overflow: hidden;
+			height: 830px;
+			width: 1400px;
+			object-fit: cover;
+			}	
+		
+		#carousel-example-generic a.carousel-control {
+			height: 26%;
+			top: 33%;
+			width: 20px;
+			background: black;
+			}
+			
+		.carousel-caption {
+			padding-left:40px;
+			text-align: left;
+			font-size: 20px;
+			max-width: 100%;
+			width:100%;
+			left: 0;
+			background-color: rgba(192,192,192,0.5);
+			}
+			
+		.bg-grey {
+			background-color: #272727;
+			}
+			
+		div.c-wrapper{
+			width: 80%;
+			margin: auto;
+			justify-content: center;
+			display: flex;
+			}	
+		
+		.img-fit {
+			float: left;
+			height: 850px;
+			}
+		
+		.display-6 {
+			font-size: 30px;
+			text-align: justify;
+			text-justify: inter-word;
+			}
+		
+		.font {
+			text-shadow: 0 1px 0 #ccc,
+				0 3px 5px rgba(0,0,0,.2),
+				0 20px 20px rgba(0,0,0,.15);
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+			}
+		
+		.font-green {
+			color: #3EC572;
+			font-weight: bold;
+			font-size: 22px;
+			}
+			
+		.font-dark {
+			color: #212529;
+			font-weight: bold;
+			font-size: 22px;
+			}
+		
+		.foot-font {
+			color: white;
+			font-weight: bold;
+			font-size: 22px;
+			}
+		
+		.foot-text {
+			color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+		    font-size: 18px;
+			font-family: 'Open Sans', sans-serif;
+			}
+		
+		.bg-secondary {
+			background-color: #808080;
+			}
+
+		.dropdown:hover .dropdown-menu {
+			display: block;
+			margin-top: 0; 
+			}	
+		
+		.card {
+			margin: 0 auto;
+			float: none; 
+			margin-bottom: 10px;
+	        }
+		</style>
+		
+		
+	</head>
+	<body>	
+	<!-- Navbar -->
+		<nav class="navbar navbar-light green">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+			  <img class="img-fluid" src="Logo/CHARLIE-logos_white.png" alt="" width="500" height="100">
+			</a>
+		  </div>
+		</nav>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark light-green">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="#"> </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			  <ul class="navbar-nav me-auto my-2 my-lg-0 font">
+				<li class="nav-item">
+				  <a class="nav-link active" href="index.html"><button class="button font">Home</button></a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle active" href="portfolio.html" id="navbarDropdown" role="button" aria-expanded="false">
+					<button class="button font">
+						Portfolio
+					</button>
+				  </a>
+				  <ul class="dropdown-menu light-green" aria-labelledby="navbarDropdownMenuLink">
+					<li><a class="dropdown-item" style="color:white;" href="website.html">Website Designs</a></li>
+					<li><a class="dropdown-item" style="color:white;" href="video.html">Edited Videos</a></li>
+					<li><a class="dropdown-item" style="color:white;" href="cover.html">Music Covers</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="blogs.html"><button class="button font">Blogs</button></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active" href="about me.html"><button class="button font">About Me</button></a>
+				</li>
+			  </ul>
+				<span class="nav-item">
+				 <button class="button" type="button" id="formButton" data-bs-toggle="modal" data-bs-target="#Login"><a class="nav-link font">Log In</a></button>
+				</span>
+				  <a class="font" style="text-decoration: none; pointer-events: none;">|</a>
+				<span class="nav-item">
+				  <button class="button" type="button" id="formButton" data-bs-toggle="modal" data-bs-target="#SignUp"><a class="nav-link font">Sign Up</a>
+			  </span>	
+			</div>
+		  </div>
+		</nav>
+		
+		<!-- Login Form -->
+		<div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content green">
+			  <div class="modal-header text-center">
+				<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Login</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="myReset()"></button>
+			  </div>
+			  <div class="modal-body bg-dark">
+				<form name="form1" id="form1" onsubmit="return validateForm()">
+				  <div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Email address</label>
+					<input name="emailAddress" type="email" class="form-control" placeholder="Enter email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div class="invalid-feedback">
+							Enter your email address
+						</div>
+				  </div>
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Password</label>
+					<input name="password" type="password" class="form-control" placeholder="Enter password" id="exampleInputPassword1">
+						<div class="invalid-feedback">
+							Enter your password
+						</div>
+				  </div>
+				  <div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" onclick="myFunction()">Show Password
+						<script>
+						function myFunction() {
+						  var x = document.getElementById("exampleInputPassword1");
+						  if (x.type === "password") {
+							x.type = "text";
+						  } else {
+							x.type = "password";
+						  }
+						}
+						</script>
+				  </div>
+				  </div>
+				  <div class="modal-footer bg-dark">
+					<div class="col-md-12 text-center">
+						<button type="submit" value="submit" class="btn btn-success font" style="font-size: 15px; background-color: #3EC572;">Login</button>
+					</div>
+				  </div>
+			    </form>
+			</div>
+		  </div>
+		</div>
+		
+		<!-- Sign Up Form -->
+		<div class="modal fade" id="SignUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content green">
+			  <div class="modal-header text-center">
+				<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Sign Up</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="myReset()"></button>
+			  </div>
+			  <div class="modal-body bg-dark">
+				<form name="form2" id="form2" onsubmit="return SignUpValidate()">
+				  <div class="mb-3">
+					<label for="exampleInputEmail2" class="form-label">Email address</label>
+					<input name="emailAddress" type="email" class="form-control" placeholder="Enter email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div class="invalid-feedback">
+							Enter your email address
+						</div>
+				  </div>
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Password</label>
+					<input name="password" type="password" class="form-control" placeholder="Enter password" id="exampleInputPassword2">
+						<div class="invalid-feedback">
+							Enter your password
+						</div>
+				  </div>
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+					<input name="confirmPassword" type="password" class="form-control" placeholder="Re-enter password" id="exampleInputPassword">
+				  </div>
+				  <div class="mb-3 form-check">
+					<input name="checkBox" type="checkbox" class="form-check-input in-invalid" id="invalidCheck3" aria-describedby="invalidCheck3Feedback">I accept the Terms of Use & Privacy Policy
+				  </div>
+				  </div>
+				  <div class="modal-footer bg-dark">
+					<div class="col-md-12 text-center">
+						<button type="submit" value="submit" class="btn btn-success font" style="font-size: 15px; background-color: #3EC572;">Create Account</button>
+					</div>
+				  </div>
+			    </form>
+			</div>
+		  </div>
+		</div>
+		
+		<script>
+			function myReset() {
+			  document.getElementById("form1").reset();
+			  document.getElementById("form2").reset();
+			}
+		</script>	
+	
+	
+	<!-- Video Modal -->
+	<div>
+		<div id="myModal" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">epqbm div</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/1EXmca2kLrA" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal1" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">News Broadcasting</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo1" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/VhWsDt31zNE" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal2" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Ultimate Wingsanity Challenge</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo2" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/Buxza1mYRLA" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal3" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">☻ ☻ ☻ 𝕊𝕄𝕀𝕃𝔼 ☻ ☻ ☻</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo3" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/eAFqZE2ICcw" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal4" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Cell Evolution Theory</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo4" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/ytEGKLGzIfA" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal5" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Milk-Dishwashing Soap Chemical Reaction</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo5" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/LaPPoRRmKEI" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal6" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Group 3- Dokumentaryo Tungkol sa Kalagayan ng Wika Natin</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo6" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/e5fj0vWLXDI" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal7" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Project Vlog :Yahkisobah!!!</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo7" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/oGpCXtOcdCc" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal8" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Gag Reel</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo8" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/sgNTJd-8VhY" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal9" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Joy - A Short Film (First 3 Minutes)</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo9" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/KHk2cJqCPr8" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal10" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Lost Girl - A Short Film</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo10" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/0ZzBgFMWKVA" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal11" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Lupang Hinirang</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo11" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/00LzHHZ9y9Q"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal12" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Batman V Super Man: Trinity United</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo12" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/px7SR_l8tQU"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal13" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Best Support Ever</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo13" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/4afmmRxVty0"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal14" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">The Dark Steel</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo14" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/0gkWoLKVv1Q"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal15" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Azir URF Gameplay</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo15" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/twY9opZKE0w"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal16" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">Wayne Trailer - Logan Trailer Parody (Fan Made)</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo16" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/g-TgimgyLR0"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal17" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">MISS TORTURE</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo17" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/A3lCUR0jS-Q"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal18" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">SSF2 - Naruto Enter</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo18" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/K9jqVdwwNDI"
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal19" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">MID CJ Overload Azir vs Veigar</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo19" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/eeFFxqYrvmY" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal20" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content green">
+					<div class="modal-header text-center">
+						<h5 class="modal-title w-100 font" id="exampleModalLabel" style="padding-left: 25px; font-size: 30px;">The Mask</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="myVideo20" class="w-100" width="560" height="625" src="https://www.youtube-nocookie.com/embed/RrByvtWxqVQ" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+								gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+	<!-- 1 Row Grid -->
+		<br><br><br><br>
+		<div class = "bg-dark">
+			  <div class="container overflow-hidden">
+				  <div class="row gx-5 text-center">
+					<h1 class="font-green" style="font-size: 120px;">Edited Videos</h1>
+				  </div>
+				  <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Mask.jpg" class="card-img-top" alt="Mask Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">The Mask</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal20" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Horror.jpg" class="card-img-top" alt="Horror Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">epqbm div</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/News.jpg" class="card-img-top" alt="News Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">News Broadcasting</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal1" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				  </div>
+				  <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Wingsanity.jpg" class="card-img-top" alt="Wingsanity Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Ultimate Wingsanity Challenge</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal2" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Smile.jpg" class="card-img-top" alt="Smile Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">☻ ☻ ☻ 𝕊𝕄𝕀𝕃𝔼 ☻ ☻ ☻</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal3" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Cell.jpg" class="card-img-top" alt="Cell Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Cell Evolution Theory</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal4" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				   </div>
+				   <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Milk.jpg" class="card-img-top" alt="Milk Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Milk-Dishwashing Soap Chemical Reaction</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal5" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Wika.jpg" class="card-img-top" alt="Wika Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Group 3- Dokumentaryo Tungkol sa Kalagayan ng Wika Natin</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal6" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Vlog.jpg" class="card-img-top" alt="Vlog Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Project Vlog :Yahkisobah!!!</h5>
+							<p class="card-text"></p>
+							<br><br>
+							<div class="text-end">
+								<a href="#myModal7" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>	
+						  </div>
+						</div>
+					</div>
+				   </div>
+				   <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Gag.jpg" class="card-img-top" alt="Gag Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Gag Reel</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal8" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Joy.jpg" class="card-img-top" alt="Joy Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Joy - A Short Film (First 3 Minutes)</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal9" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Lost.jpg" class="card-img-top" alt="Lost Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Lost Girl - A Short Film</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal10" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				   </div>
+				   <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/LP.jpg" class="card-img-top" alt="LP Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Lupang Hinirang</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal11" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Trinity.jpg" class="card-img-top" alt="Trinity Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Batman V Super Man: Trinity United</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal12" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Support.jpg" class="card-img-top" alt="Support Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Best Support Ever</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal13" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				   </div>
+				   <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Dark.jpg" class="card-img-top" alt="Dark Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">The Dark Steel</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal14" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/URF.jpg" class="card-img-top" alt="URF Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Azir URF Gameplay</h5>
+							<p class="card-text"></p>
+							<br>
+							<div class="text-end">
+								<a href="#myModal15" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Wayne.jpg" class="card-img-top" alt="Wayne Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">Wayne Trailer - Logan Trailer Parody (Fan Made)</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal16" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				   </div>
+				   <div class="row gx-5">
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Torture.jpg" class="card-img-top" alt="Torture Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">MISS TORTURE</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal17" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/SSF2.jpg" class="card-img-top" alt="SSF2 Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">SSF2 - Naruto Enter</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal18" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex align-items-stretch">
+						<div class="card" style="width: 23rem; margin-top: 70px; margin-bottom: 70px;">
+						  <img src="Images/Azir.jpg" class="card-img-top" alt="Azir Thumbnail">
+						  <div class="card-body green">
+							<h5 class="card-title font-dark">MID CJ Overload Azir vs Veigar</h5>
+							<p class="card-text"></p>
+							<div class="text-end">
+								<a href="#myModal19" class="btn btn-outline-dark" data-bs-toggle="modal">Watch Video</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				  </div>
+				</div>
+		</div>	
+		
+		<br><br><br><br>
+	<!-- Footer -->
+		<!-- Footer -->
+		<footer class="green text-center text-white">
+		  <!-- Grid container -->
+		  <div class="container p-4">
+
+
+			<!-- Section: Links -->
+			<section class="">
+			  <!--Grid row-->
+			  <div class="row">
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+				  <h5 class="text-uppercase foot-font">Find Me</h5>
+					<div class="container list-unstyled mb-0">
+					  <div class="row">
+						<div class="col-sm-3" >
+							<a href="https://www.facebook.com/charles.tacda.18" target="_blank">
+							  <img src="Logo/facebook.png" alt="Facebook Logo" height="50">
+							</a>
+						</div>
+						<div class="col-sm-3">
+							<a href="https://twitter.com/CharlesTacda" target="_blank">
+							  <img src="Logo/twitter.png" alt="Twitter Logo" height="50">
+							</a>
+						</div>
+						<div class="col-sm-3" href="index.html">
+							<a href="https://www.youtube.com/user/AngryBirdsCharles/" target="_blank">
+							  <img src="Logo/youtube.jpg" alt="YouTube Logo" height="50">
+							</a>  
+						</div>
+					  </div>
+					</div>
+					<ul class="list-unstyled mb-0" style="padding-top: 15px; line-height: normal;">
+						<li>
+						  <a class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;">© 2021 Charlie. All Rights Reserved</a>
+						</li>
+						<li>
+						  <a href="#!" style="font-size: 15px; padding-left: 8px;" class="foot-text">Terms of Use</a>
+						  <a class="foot-text" style="font-size: 15px; pointer-events: none;">|</a>
+						  <a href="#!" style="font-size: 15px;" class="foot-text">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+				  <h5 class="text-uppercase foot-font">Contacts</h5>
+
+				  <ul class="list-unstyled mb-0" style="line-height: normal;">
+					<li>
+					  <a href="mailto:charlestacda@gmail.com" class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;" target="_blank">charlestacda@gmail.com</a>
+					</li>
+					<li>
+					  <a href="tel:9357659286" class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;" target="_blank">+63 9357659286</a>
+					</li>
+				  </ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+				  <h5 class="text-uppercase foot-font">Quick Links</h5>
+
+				  <ul class="list-unstyled mb-0" style="line-height: normal;">
+					<li>
+					  <a href="index.html" class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;">Home</a>
+					</li>
+					<li>
+					  <a href="portfolio.html" class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;">Portfolio</a>
+					</li>
+					<li>
+					  <a href="blogs.html" class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;">Blogs</a>
+					</li>
+					<li>
+					  <a href="about me.html" class="foot-text" style="font-size: 15px; text-decoration: none; padding: 8px;">About Me</a>
+					</li>
+				  </ul>
+				</div>
+				<!--Grid column-->
+
+				<!--Grid column-->
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+					<a href="index.html">
+					  <img src="Logo/Logo White.png" alt="" width="" height="100">
+					 </a>
+				</div>
+				<!--Grid column-->
+			  </div>
+			  <!--Grid row-->
+			</section>
+			<!-- Section: Links -->
+		  </div>
+		  <!-- Grid container -->
+		</footer>
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	
+</script>
+	</body>
+</html>
